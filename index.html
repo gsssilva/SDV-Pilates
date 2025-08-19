@@ -16,6 +16,10 @@
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <!-- bootstrap icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- css aos -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <script src="js/script.js"></script>
 </head>
@@ -76,7 +80,7 @@
   <section>
     <div class="missao container">
 
-      <div class="left_column-missao">
+      <div class="left_column-missao" data-aos="fade-up-right">
         <h3 class="style-titles">Nossa missão</h3>
         <br><br>
         <p>Desde 2017, nossa missão é transformar vidas através do
@@ -89,10 +93,12 @@
           dores e previne lesões. Além dos ganhos físicos, reduz o
           estresse, aumenta a concentração e proporciona bem-estar
           duradouro.
+          <br>
+          <a class="btn btn-primary mt-5" href="#" role="button">Quero agendar minha aula</a>
         </p>
       </div>
 
-      <div class="right_column-missao">
+      <div class="right_column-missao" data-aos="fade-up-left">
         <img src="images/img-missao.webp" class="img-missao" alt="Nossa missão">
       </div>
 
@@ -103,11 +109,11 @@
     <h3 class="style-titles">Sandra de Veras</h3>
     <div class="missao container">
 
-      <div class="right_column-missao">
+      <div class="right_column-missao" data-aos="flip-left">
         <img src="images/sandra-self.webp" class="img-missao" alt="Sandra de Veras">
       </div>
 
-      <div class="left_column-missao">
+      <div class="left_column-missao" data-aos="zoom-in">
         <br><br>
         <p>Sandra de Veras atua na área da educação física como
           personal trainer há mais de 20 anos e professora de Pilates há
@@ -122,6 +128,8 @@
           aulas de acordo com a necessidade individual de cada aluno.
           <br><br>
           Agende uma aula experimental e venha ter essa experiência!
+          <br>
+          <a class="btn btn-primary mt-5" href="#" role="button">Agende sua aula</a>
         </p>
       </div>
     </div>
@@ -132,7 +140,7 @@
       <h3 class="style-titles">Pilates é indicado para:</h3>
     </div>
 
-    <div class="beneficios container">
+    <div class="beneficios container" data-aos="fade-up" data-aos-duration="3000">
 
       <!-- Imagem fixa para desktop -->
       <img src="images/img-desk.png" class="img-fluid d-none d-md-block bene-mob" alt="Imagem Desktop">
@@ -175,7 +183,9 @@
 
   <div class="bg-section-color-dark pb-5">
     <section class="carrossel-flex">
-      <div class="container">
+      <div class="container" data-aos="flip-left"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="2000">
         <h2 class="style-titles">Nosso espaço 💙</h2>
 
         <!-- Carousel principal -->
@@ -219,19 +229,34 @@
     </section>
   </div>
 
-  <section class="map-container bg-footer" id="footer">
+  <footer class="map-container bg-footer pb-4" id="footer">
 
     <div class="footer-custom container">
-      <div>
+      <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
         <img src="images/print-insta.png" class="d-none d-md-block" width="400px" alt="">
       </div>
 
       <div class="container-custom">
-        <h3 class="style-titles">Instagram</h3>
-        <br>
-        <p class="address">Venha acompanhar de perto através do nosso instagram @teste</p>
+        <h3 class="style-titles">Informações de contato</h3>
+
+        <div>
+          <a href="https://wa.me/5511999999999" target="_blank" class="whatsapp-float">
+            <i class="bi bi-whatsapp"></i>
+            <span class="in-footer">WhatsApp +1190000-0000</span>
+          </a>
+        </div>
+
+        <div>
+          <a href="https://wa.me/5511999999999" target="_blank" class="whatsapp-float">
+            <i class="bi bi-instagram"></i>
+            <span class="in-footer">@sandradeveras_</span>
+          </a>
+        </div>
+
         <h3 class="style-titles">Localização 📍</h3>
+
         <br>
+
         <p class="address">Estamos localizados na Rua Amélia Corrêa Fontes Guimarães, 67 - Jardim Guedala, São Paulo -
           SP,
           05617-010</p>
@@ -243,12 +268,23 @@
       width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
       referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-  </section>
+    <div class="mt-3 d-flex justify-content-center align-items-center" style="color: rgba(255, 255, 255, 0.637);">
+      <h6>© 2025 Studio Pilates Sandra de Veras. Todos os direitos reservados.</h6>
+    </div>
+
+  </footer>
 
   <!-- Bootstrap Bundle com Popper (JS) -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
     crossorigin="anonymous"></script>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    AOS.init();
+  </script>
+
 </body>
 
 </html>

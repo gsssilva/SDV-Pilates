@@ -16,13 +16,16 @@
 
 .whatsapp-btn {
   position: fixed;
-  bottom: 20px; /* distância do rodapé */
-  right: 20px;  /* distância da borda direita */
+  bottom: 20px;
+  /* distância do rodapé */
+  right: 20px;
+  /* distância da borda direita */
   width: 60px;
   height: 60px;
-  background-color: #25D366; /* cor oficial do WhatsApp */
+  background-color: #25D366;
+  /* cor oficial do WhatsApp */
   border-radius: 50%;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -38,7 +41,8 @@
 }
 
 .whatsapp-btn:hover {
-  background-color: #128C1E; /* cor ao passar o mouse */
+  background-color: #128C1E;
+  /* cor ao passar o mouse */
 }
 
 .bg-section-color {
@@ -164,6 +168,27 @@
 
 
 /* seção endereço */
+.in-footer {
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.whatsapp-float {
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  font-size: 26px;
+  z-index: 1000;
+  text-decoration: none;
+}
+
+.whatsapp-float i {
+  line-height: 60px;
+}
+
+
 .address {
   font-size: 20px;
   font-weight: bold;
@@ -196,5 +221,7 @@
 }
 
 .bg-footer {
-  background-color: #000000;
+  background-image: url(/images/footer_bg_dark.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
