@@ -159,6 +159,10 @@
 }
 
 /* FIM nossa missão */
+.btn-custom {
+  padding: 15px;
+}
+
 .bene-mob {
   max-width: 1040px;
   width: 100%;
